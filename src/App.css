@@ -1,0 +1,714 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lora&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* slider */
+.home_gallery {
+  display: inline-flex;
+  justify-content: center;
+  animation: scroll 40s linear infinite;
+  padding: 20px;
+  overflow: hidden;
+  margin-bottom: 50px 0 100px 0;
+}
+
+.home_gallery div {
+  width: 400px;
+  height: 250px;
+  display: grid;
+  align-items: center;
+  padding: 15px;
+}
+
+.home_gallery img {
+  width: 135px;
+  height: 170px;
+  background-position: center;
+  background-size: contain;
+  /* object-fit: cover; */
+}
+
+.home_gallery img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.home_gallery:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+/* about us */
+.about-us-wrap {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+  overflow-x: hidden;
+}
+
+.about_us_heading {
+  margin-top: 56px;
+  margin-bottom: 38px;
+  color: #1367c9;
+  text-align: center;
+  font-family: "Lora", serif;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.aboutus_para {
+  width: 838px;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.images_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px 0px;
+}
+
+.image_item {
+  padding: 0 25px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.inner_text {
+  width: 230px;
+  height: 95px;
+  text-align: center;
+  padding: 25px 50px 0px 50px;
+  margin-left: 10px;
+  margin-top: -100px;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  font-family: "Lora", serif;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30.26%, #000 99.8%);
+  border-radius: 5px;
+}
+
+/* why buy from us */
+.why_buy_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #e3f0ff;
+  justify-content: center;
+  padding: 30px 0px;
+  align-items: center;
+}
+
+.text_side {
+  width: 45%;
+}
+
+.wb_main_heading {
+  color: #1d1d1d;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.wb_sub_heading {
+  color: #1d1d1d;
+  font-family: "Lora", serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 42px 0 21px 0;
+}
+
+.wb_para {
+  width: 650px;
+  color: #1d1d1d;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.learn_more_btn {
+  width: 240px;
+  border-radius: 6px;
+  background: #1367c9;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.image_side {
+  width: 40%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: start; */
+}
+.barometer_image {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 25px;
+}
+
+.cockpit_img {
+  margin-top: -50px;
+  margin-left: 20%;
+  width: 452px;
+  border-top-style: solid;
+  border-top-color: #1367c9;
+  border-radius: 44.899px;
+  border-width: 12px;
+  border-right-style: solid;
+  border-right-color: #1367c9;
+}
+
+.welding_img {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 25px;
+  z-index: 1000;
+  margin-top: -40px;
+}
+
+/* product component */
+.prod_div {
+  /* height: 23rem; */
+  overflow: hidden;
+  margin: 10px;
+  width: 280px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.prod_div img {
+  height: 340px;
+}
+
+.prod_title_wrap {
+  padding: 25px 10px;
+  margin: -4px;
+  display: grid;
+  place-items: center;
+  background-color: #1367c9;
+  color: #fff;
+}
+
+.prod_title {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.prod_desc {
+  color: #000;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+/* our product */
+.prod_headline {
+  margin-top: 120px;
+  margin-bottom: 35px;
+  width: 100%;
+  color: #1367c9;
+  text-align: center;
+  font-family: "Lora", sans-serif;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 145%;
+}
+
+.react-multi-carousel-item {
+  overflow-y: hidden;
+  margin: 0 50px;
+  width: fit-content !important;
+}
+
+.react-multiple-carousel__arrow--left {
+  position: absolute;
+  border: 1px solid green;
+}
+
+.explore_more_btn {
+  margin: 70px 0 120px 0;
+  width: 240px;
+  border-radius: 6px;
+  border: 1px solid #1367c9;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  color: #1367c9;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.main_wrap {
+  background: #eff2f6, #eff2f6;
+}
+/* product footer */
+.product_footer_wrapper {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 108px;
+  width: 100vw;
+  height: 360px;
+  background-image: url(../src/assets/IMAGE.png);
+}
+
+.footer_member {
+  font-family: Roboto;
+  font-size: 14.708px;
+  margin-top: 35px;
+}
+
+.member_img {
+  padding: 4px;
+}
+/* footer */
+.footer_wrapper {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 360px;
+  background-image: url(../src/assets/IMAGE.png);
+}
+
+.footer_items {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e3f0ff;
+}
+
+.footer_addres {
+  margin: 15px 0;
+  font-family: Roboto;
+  font-size: 14.708px;
+}
+
+.footer_addres_ul {
+  margin-left: 332px;
+  margin-top: 75px;
+}
+
+.footer_links_ul {
+  margin-left: 344px;
+  margin-top: 80px;
+}
+.footer_links {
+  margin: 10px 0;
+  font-family: Roboto;
+  font-size: 14.708px;
+}
+
+.footer_policies_ul {
+  margin-right: 408px;
+  margin-top: 33px;
+}
+
+.footer_policies {
+  margin: 13px 0;
+  font-family: Roboto;
+  font-size: 14.708px;
+}
+
+.copyright {
+  height: 59px;
+  width: 100vw;
+  background-color: #1367c9;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4px;
+}
+
+.upppperDiv {
+  position: relative;
+  bottom: -85px;
+  z-index: 99999;
+}
+
+.lowerDiv {
+  position: relative;
+  z-index: 0;
+}
+
+/* home banner */
+.home_banner {
+  width: 100vw;
+  height: 800px;
+  background-image: url(./assets/skilled-repairmaster-is-working-with-machine-tool-busy-bucycle-workshop\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  object-fit: contain;
+  object-position: center;
+  overflow-x: hidden;
+}
+.bold_heading {
+  width: 898px;
+  color: #fff;
+  text-align: center;
+  font-family: "Lora", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.59);
+  height: 100%;
+  width: 100%;
+}
+.sub_heading_home {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.front_content {
+  height: 88%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20%;
+}
+/* top menu */
+.topmenu_wrap {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  align-items: center;
+  border-bottom: 1px solid #ffffff80;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  z-index: 10000;
+}
+
+.left_sec {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.right_sec {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu_item {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px; /* 355.556% */
+  text-transform: uppercase;
+}
+
+.brand_name {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
+
+.product_listing {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  padding: 10px 10%;
+  justify-content: space-evenly;
+  row-gap: 40px;
+}
+
+/* topnav */
+
+.topmenu_wrap {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  align-items: center;
+  border-bottom: 1px solid #ffffff80;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  z-index: 10000;
+}
+
+.header {
+  overflow: hidden;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header Link.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+  display: flex;
+}
+
+/* contact us  */
+
+.contact_box {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_container {
+  background-color: #e3f0ff;
+  width: 1184px;
+  height: 602px;
+  border-radius: 8px;
+  box-shadow: 0px 3.5683px 46.38792px 0px rgba(245, 245, 245, 0.17);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_h3 {
+  color: #1367c9;
+  font-family: Lora;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.info_container {
+  margin: 15px 0;
+  width: 374px;
+}
+
+.info_inputs {
+  width: 374px;
+  border: none;
+  border-bottom: 1px solid #1367c9;
+  background: transparent;
+  padding: 15px 0;
+}
+
+::placeholder {
+  font-size: 25.44px;
+  font-family: Inter;
+  font-weight: 400;
+  height: fit-content;
+}
+
+.contact_img {
+  width: 317.673px;
+  height: 485.173px;
+  overflow: hidden;
+}
+
+.contact_btn {
+  padding: 24px 120px;
+  color: #fff;
+  border-radius: 48px;
+  background: #1367c9;
+  border: 1px solid #1367c9;
+  margin-top: 50px;
+}
+
+/* header css */
+
+.header_container {
+  display: flex;
+}
+
+.logo {
+  z-index: 66;
+  position: absolute;
+}
+
+.logo_img {
+  position: absolute;
+  top: 27px;
+  z-index: 99;
+}
+
+.blue_triangle {
+  position: absolute;
+  top: 125px;
+  left: -33px;
+  z-index: 0;
+}
+
+.link_box {
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.header_links {
+  color: #fff;
+  margin: 0 12px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px; /* 376.471% */
+  text-transform: uppercase;
+}
+
+.footer_p {
+  width: 310px;
+  margin-top: 15px;
+}
+@media screen and (max-width: 480px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .header_links {
+    margin: 0 5px;
+    font-size: 8px;
+  }
+
+  .link_box {
+    width: 100vw;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
+  .blue_triangle {
+    position: absolute;
+    top: 65px;
+  }
+  .blue_triangle img {
+    width: 200px;
+  }
+
+  .logo_img img {
+    width: 60px;
+  }
+
+  .wb_para {
+    width: 295px;
+  }
+
+  .prod_div {
+    width: 280px;
+    box-shadow: 0px 0px;
+  }
+  /* .prod_div img {
+    width: 340px;
+  } */
+
+  .footer_p {
+    width: 308px;
+  }
+}
