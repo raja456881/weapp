@@ -136,11 +136,30 @@ const Products = () => {
               desktop: {
                 breakpoint: {
                   max: 3000,
-                  min: 600,
+                  min: 1024,
                 },
                 items: 3,
                 partialVisibilityGutter: 40,
+                slidesToSlide:3
               },
+              tablet:{
+                breakpoint: {
+                  max: 3000,
+                  min: 1024,
+                },
+                items: 3,
+                partialVisibilityGutter: 40,
+                slidesToSlide:2 
+              },
+              mobile:{
+                 breakpoint: {
+                  max: 464,
+                  min: 0,
+                },
+                items: 1,
+                partialVisibilityGutter: 40,
+                slidesToSlide:1 
+              }
             }}
             rewind={false}
             rewindWithAnimation={false}
